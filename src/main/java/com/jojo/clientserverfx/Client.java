@@ -23,7 +23,7 @@ public class Client extends Application {
         // BorderPane to hold the label and text field
         BorderPane paneForTextField = new BorderPane();
         paneForTextField.setPadding(new Insets(5, 5, 5, 5));
-        paneForTextField.setStyle("-fx-border-color: green");
+        paneForTextField.setStyle("-fx-border-color: LIGHTBLUE");
         paneForTextField.setLeft(new Label("Enter number to find if it's prime: "));
         // Textfield
         TextField tf = new TextField();
@@ -60,8 +60,8 @@ public class Client extends Application {
                     ta.appendText("No\n");
                 }
             }
-            catch (IOException ex) {
-                System.err.println(ex);
+            catch (Throwable throwable) {
+                System.err.println(throwable);
             }
         });
 
